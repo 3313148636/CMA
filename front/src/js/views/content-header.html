@@ -1,0 +1,10 @@
+<h1>
+    {{title}}
+    <small>{{description}}</small>
+</h1>
+<ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+    <% for(var i=0; i<list.length; i++ ){ %>
+    <li class="active"><a href="#<%=list[i].path%>"><%= list[i].text %></a></li>
+    <% } %>
+</ol>
